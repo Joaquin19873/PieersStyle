@@ -1,0 +1,87 @@
+
+/*ESTILO PARA CAMISAS*/
+.camisas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.camisa {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.camisa img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+/*ESTILO PARA PANTALONES*/
+.pantalones {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.pantalon {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pantalon img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+/*ESTILO PARA CASACAS*/
+.casacas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.casaca {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.casaca img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+/* CATEGORÍAS DEL CATÁLOGO */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 30px;
+    flex-wrap: wrap; 
+}
+
+.categoria {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.categoria img {
+    width: 380px;
+    height: 360px;
+    object-fit: cover; 
+    border-radius: 12px;
+}
+
+.categoria:hover {
+    transform: scale(1.05); 
+}

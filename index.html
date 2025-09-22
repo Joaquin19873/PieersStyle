@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIEERS</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Bootstrap.css">
+    <link rel="stylesheet" href="CSS/Estilo1.css"> 
+    <link rel="stylesheet" href="CSS/CarruselImagenes.css">
+    <link rel="stylesheet" href="CSS/EstiloRopa.css">
+
+    <link rel="icon" href="Imagenes/Iconos/Pieers_Logo_Pequeño_Pagina.jpg">
+    
+</head>
+
+<body>
+    <!-- EL ENCABEZADO  -->
+    <header>  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-negro w-100">
+        <div class="container-fluid">
+          <!--LOGO-->
+          <a class="navbar-brand" href="Inicio.html">
+            <img src="Imagenes/Iconos/Pieers_logo.jpg" alt="PIEERS" width="70" height="65">
+          </a>
+
+          <!-- BOTON HAMBURGUESA -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--LINKS-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catálogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Camisas.html">Camisas</a></li>
+                  <li><a class="dropdown-item" href="Casacas.html">Casacas</a></li>
+                  <li><a class="dropdown-item" href="Pantalones.html">Pantalones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Favoritos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+            <!--BUSCAR-->
+            <form class="d-flex me-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar un producto" aria-label="Buscar"/>
+              <button type="submit" class="btn p-0">
+                <img src="Imagenes/Iconos/Icono_Buscar.png" alt="Buscar" width="40" height="40">
+              </button>
+            </form>
+            <!--USUARIO-->
+            <a href="#" class="ms-3">
+              <img src="Imagenes/Iconos/Icono_Usuario.png" alt="Usuario" width="50" height="50">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- EL BANNER  -->
+      <div class="banner">
+        <div class="capa"></div>
+        <div class="info">
+          <h1><b>Bienvenidos a PIEERS</b></h1>
+          <p>
+          Descubre el estilo que te define, con ropa moderna, 
+          cómoda y pensada para cada momento de tu día.
+          </p>
+          <a href="Catalogo.html">Catálogo</a>
+        </div>
+      </div>
+
+    <!-- EL CARRUSEL DE IMAGENES  -->
+    <section class="carrusel-contenedor">
+
+      <div class="carrusel">
+        <div class="slide">
+          <img src="Imagenes/Inicio/MODA MUJER.jpg" alt="La Mejor Moda Mujer">
+          </div>
+          <div class="slide">
+          <img src="Imagenes/Inicio/MODA URBANA.jpg" alt="La Mejor Moda Urbana">
+          </div>
+          <div class="slide">
+          <img src="Imagenes/Inicio/MODA HOBRE.jpg" alt="La Mejor Moda Hombre">
+          </div>
+          <div class="slide">
+          <img src="Imagenes/Inicio/MODA INFANTIL.webp" alt="La Mejor Moda Infantil">
+        </div>
+      </div>
+
+      <div class="info-carrusel">
+        <div class="texto">
+          <h2>Moda Mujer</h2>
+          <p>Encuentra las últimas tendencias en ropa femenina. Moderno, elegante y cómodo.</p>
+        </div>
+        <div class="texto">
+          <h2>Moda Urbana</h2>
+          <p>Estilo callejero con actitud. Perfecto para destacar en cualquier lugar.</p>
+        </div>
+        <div class="texto">
+          <h2>Moda Hombre</h2>
+          <p>Prendas diseñadas para combinar estilo y comodidad en tu día a día.</p>
+        </div>
+        <div class="texto">
+          <h2>Moda Infantil</h2>
+          <p>Ropa divertida y cómoda para los más pequeños, con mucho estilo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EL CARRUSEL DE PRODUCTOS  -->
+
+    <section class="carrusel-productos">
+      <h2>PRODUCTOS DESTACADOS</h2>
+      <input type="radio" name="slider" id="s1" checked>
+      <input type="radio" name="slider" id="s2">
+
+      <div class="slides">
+        <div class="grupo">
+          <div class="producto">
+            <img src="Imagenes/Inicio/CAT CAMISAS.jpg" alt="Camisas">
+            <h3>Camisas</h3>
+            <button>Ver más</button>
+          </div>
+          <div class="producto">
+            <img src="Imagenes/Inicio/CAT PANTALONES.png" alt="Pantalones">
+            <h3>Pantalones</h3>
+            <button>Ver más</button>
+          </div>
+          <div class="producto">
+            <img src="Imagenes/Inicio/CAT CASACAS.webp" alt="Casacas">
+            <h3>Casacas</h3>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <div class="producto">
+            <img src="Imagenes/Inicio/CAT ZAPATOS.webp" alt="Zapatos">
+            <h3>Zapatos</h3>
+            <button>Ver más</button>
+          </div>
+          <div class="producto">
+            <img src="Imagenes/Inicio/CAT ACCESORIOS.jpg" alt="Accesorios">
+            <h3>Accesorios</h3>
+            <button>Ver más</button>
+          </div>
+          <div class="producto">
+            <img src="Imagenes/Inicio/CAT DEPORTIVA.webp" alt="Camisas">
+            <h3>Deportiva</h3>
+            <button>Ver más</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="navegacion">
+
+        <label for="s2" class="prev">◀</label>
+        <label for="s1" class="prev">◀</label>
+
+        <label for="s2" class="next">▶</label>
+        <label for="s1" class="next">▶</label>
+      </div>
+    </section>
+
+
+    <!-- Whattsapp ICONO -->
+    <a href="https://wa.me/51923272227?text=Hola" target="_blank" class="float-wa">
+      <img src="Imagenes/Iconos/Icono_WhatsApp.png" alt="WhatsApp" width="60" height="60">
+    </a>
+
+
+    <!-- EJEMPLOS DE OFERTAS -->
+      <div class="bloque">
+          <div class="texto">
+              <h2>Conjunto Casual</h2>
+              <p>Hasta 50% de descuento</p>
+              <button>Comprar</button>
+          </div>
+          <img src="Imagenes/Inicio/DESCUENTO 1.jpg" alt="Ropa">
+      </div>
+
+      <div class="bloque">
+          <div class="texto">
+              <h2>Conjunto de Invierno</h2>
+              <p>Hasta 40% de descuento</p>
+              <button>Comprar</button>
+          </div>
+          <img src="Imagenes/Inicio/DESCUENTO 1.1.webp" alt="Ropa">
+      </div>
+
+      <div class="bloque">
+          <div class="texto">
+              <h2>Conjunto de Verano</h2>
+              <p>Hasta 60% de descuento</p>
+              <button>Comprar</button>
+          </div>
+          <img src="Imagenes/Inicio/DESCUENTO 3.jpg" alt="Ropa">
+      </div>
+
+      <div class="bloque">
+          <div class="texto">
+              <h2>Conjunto de Otoño</h2>
+              <p>Hasta 50% de descuento</p>
+              <button>Comprar</button>
+          </div>
+          <img src="Imagenes/Inicio/DESCUENTO 4.webp" alt="Ropa">
+      </div>
+
+
+    <!-- EJEMPLOS ROPA-->
+      <!--MUJERES-->
+      <br>
+      <h1 class="titulo_catalogo text-center">NOVEDADES MUJER</h1>
+
+      <div class="container my-4 d-flex justify-content-center flex-wrap gap-5">
+
+        <div class="card card-hover" style="width: 18rem;">
+          <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES MUJER 1.webp" class="card-img-top" alt="Casaca Casual Mujer Sybilla">
+          <div class="card-body text-center">
+            <h5 class="card-title">Casaca Casual Mujer Sybilla</h5>
+            <a href="Camisas.html" class="btn btn-naranja">Agregar al Carrito</a>
+          </div>
+        </div>
+
+        <div class="card card-hover" style="width: 18rem;">
+          <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES MUJER 2.webp" class="card-img-top" alt="Chaleco Casual Mujer Basement">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chaleco Casual Mujer Basement</h5>
+            <a href="Pantalones.html" class="btn btn-naranja">Agregar al Carrito</a>
+          </div>
+        </div>
+
+          <div class="card card-hover" style="width: 18rem;">
+            <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES MUJER 3.webp" class="card-img-top" alt="Pantalón Skinny Mujer Basement">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pantalón Skinny Mujer Basement</h5>
+              <a href="Casacas.html" class="btn btn-naranja">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!--HOMBRES-->
+        <br>
+        <h1 class="titulo_catalogo text-center">NOVEDADES HOMBRES</h1>
+
+        <div class="container my-4 d-flex justify-content-center flex-wrap gap-5">
+
+          <div class="card card-hover" style="width: 18rem;">
+            <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES HOMBRE 1.webp" class="card-img-top" alt="Chaleco Hombre Bearcliff">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chaleco Hombre Bearcliff</h5>
+              <a href="Camisas.html" class="btn btn-naranja">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="card card-hover" style="width: 18rem;">
+            <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES HOMBRE 2.webp" class="card-img-top" alt="Casaca Casual Hombre Basement">
+            <div class="card-body text-center">
+              <h5 class="card-title">Casaca Casual Hombre Basement</h5>
+              <a href="Casacas.html" class="btn btn-naranja">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="card card-hover" style="width: 18rem;">
+            <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES HOMBRE 3.webp" class="card-img-top" alt="Casaca Cuero Hombre La Martina">
+            <div class="card-body text-center">
+              <h5 class="card-title">Casaca Cuero Hombre La Martina</h5>
+              <a href="Casacas.html" class="btn btn-naranja">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--NIÑOS-->
+        <br>
+        <h1 class="titulo_catalogo text-center">NOVEDADES NIÑOS</h1>
+
+        <div class="container my-4 d-flex justify-content-center flex-wrap gap-5">
+
+        <div class="card card-hover" style="width: 18rem;">
+          <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES NIÑO 1.webp" class="card-img-top" alt="Jeans Yamp Denim Niño">
+          <div class="card-body text-center">
+            <h5 class="card-title">Jeans Yamp Denim Niño Regular Fit Estilo Urbano</h5>
+            <a href="Pantalones.html" class="btn btn-naranja">Agregar al Carrito</a>
+          </div>
+        </div>
+
+        <div class="card card-hover" style="width: 18rem;">
+          <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES NIÑO 2.webp" class="card-img-top" alt="Polera Niño Algodón Doo Australia">
+          <div class="card-body text-center">
+            <h5 class="card-title">Polera Niño Algodón Doo Australia</h5>
+            <a href="Casacas.html" class="btn btn-naranja">Agregar al Carrito</a>
+          </div>
+        </div>
+
+        <div class="card card-hover" style="width: 18rem;">
+          <img src="Imagenes/Inicio/NOVEDADES/NOVEDADES NIÑA 3.webp" class="card-img-top" alt="Polera Niña Algodón Doo Australia">
+          <div class="card-body text-center">
+            <h5 class="card-title">Polera Niña Algodón Doo Australia</h5>
+            <a href="Casacas.html" class="btn btn-naranja">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+    <!-- INFO DE LA EMPRESA-->
+      <hr>
+      <table border="1">
+        <tr align="center">
+            <th>NOSOTROS</th>
+            <th>MARCAS</th>
+            <th>SERVICIO AL CLIENTE</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="#">Historia</a><br>
+                <a href="#">Locales</a><br>
+                <a href="#">Políticas</a>
+            </td>
+            <td>
+                <a href="#">Adidas</a><br>
+                <a href="#">Versace</a><br>
+                <a href="#">Dolce & Gabbana</a>
+            </td>
+            <td>
+                <a href="#">Preguntas frecuentes</a><br>
+                <a href="#">Términos y condiciones</a><br>
+                <a href="#">Contactos</a>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- EL PIE DE PAGINA  -->
+    <footer>
+        <p>© 2025 PIEERS | Todos los derechos reservados</p>
+        <p>Síguenos en: 
+            <a href="https://www.facebook.com/TiendasPieers.TrujilloIII/" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/pieers.pe/?hl=es" target="_blank">Instagram</a> | 
+            <a href="https://www.tiktok.com/@pieersoficial?_t=ZS-8zjVcO7RWrQ&_r=1" target="_blank">Tik Tok</a>
+        </p>
+    </footer>
+     
+    
+</body>
+</html>

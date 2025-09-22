@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIEERS - Camisas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Bootstrap.css">
+    <link rel="stylesheet" href="CSS/Estilo1.css"> 
+    <link rel="stylesheet" href="CSS/CarruselImagenes.css">
+    <link rel="stylesheet" href="CSS/EstiloRopa.css">
+
+    <link rel="icon" href="Imagenes/Iconos/Pieers_Logo_Pequeño_Pagina.jpg">
+
+</head>
+
+<body>
+    <!-- EL ENCABEZADO  -->
+    <header>  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-negro w-100">
+        <div class="container-fluid">
+          <!--LOGO-->
+          <a class="navbar-brand" href="Inicio.html">
+            <img src="Imagenes/Iconos/Pieers_logo.jpg" alt="PIEERS" width="70" height="65">
+          </a>
+
+          <!-- BOTON HAMBURGUESA -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--LINKS-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catálogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Camisas.html">Camisas</a></li>
+                  <li><a class="dropdown-item" href="Casacas.html">Casacas</a></li>
+                  <li><a class="dropdown-item" href="Pantalones.html">Pantalones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Favoritos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+            <!--BUSCAR-->
+            <form class="d-flex me-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar un producto" aria-label="Buscar"/>
+              <button type="submit" class="btn p-0">
+                <img src="Imagenes/Iconos/Icono_Buscar.png" alt="Buscar" width="40" height="40">
+              </button>
+            </form>
+            <!--USUARIO-->
+            <a href="#" class="ms-3">
+              <img src="Imagenes/Iconos/Icono_Usuario.png" alt="Usuario" width="50" height="50">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    <!-- LISTA DE CAMISAS -->
+     <section class="camisas">
+            <div class="camisa">
+                <img src="Imagenes/Camisas/Camisa_01.jpg" alt="Camisa texturizada Regular Fit">
+                <h3>Camisa texturizada Regular Fit</h3>
+                <p>S/89.00</p>
+            </div>
+
+            <div class="camisa">
+                <img src="Imagenes/Camisas/Camisa_02.jpg" alt="Camisa resort de Algodón">
+                <h3>Camisa resort de Algodón</h3>
+                <p>S/60.00</p>
+            </div>
+
+            <div class="camisa">
+                <img src="Imagenes/Camisas/Camisa_03.jpg" alt="Camisa estampada de manga corta">
+                <h3>Camisa estampada de manga corta</h3>
+                <p>S/40.00</p>
+            </div>
+
+            <div class="camisa">
+                <img src="Imagenes/Camisas/Camisa_04.jpg" alt="Camisa de manga corta en piqué Regular Fit">
+                <h3>Camisa de manga corta en piqué Regular Fit</h3>
+                <p>S/100.00</p>
+            </div>
+
+        </section>
+
+
+
+    <!-- EL PIE DE PAGINA  -->
+    <footer>
+        <p>© 2025 PIEERS | Todos los derechos reservados</p>
+        <p>Síguenos en: 
+            <a href="https://www.facebook.com/TiendasPieers.TrujilloIII/" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/pieers.pe/?hl=es" target="_blank">Instagram</a> | 
+            <a href="https://www.tiktok.com/@pieersoficial?_t=ZS-8zjVcO7RWrQ&_r=1" target="_blank">Tik Tok</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+

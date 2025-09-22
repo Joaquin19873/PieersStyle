@@ -158,19 +158,4 @@
       color: darkred;
     }
 
-/* ESTILO PARA WHATTSAPP */
-    .float-wa{
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-      display: block;
-    }
 
-    .float-wa img {
-      transition: transform 0.2s;
-    }
-
-    .float-wa img:hover {
-      transform: scale(1.1);
-    }

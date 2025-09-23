@@ -160,10 +160,13 @@
 
 .float-wa {
   position: fixed;
-  bottom: 110px;
+  bottom: 110px; 
   right: 40px;
+  font-size: 40px; 
+  color: #25d366;
   z-index: 99999;
 }
+
 
 
 
